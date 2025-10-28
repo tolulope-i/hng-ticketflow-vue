@@ -1,44 +1,41 @@
-# vueversion
+# Ticket Management App - Vue Version
+A modern ticket management application built with Vue.js 3, featuring both Option and Composition API and Vue Router.
 
-This template should help get you started developing with Vue 3 in Vite.
+# Technologies Used
+Vue 3 - Progressive JavaScript framework
+Vue Router 4 - Official routing library
+Pinia - State Management
+Vite - Next-generation build tool
+Composition API - Reactive state management
 
-## Recommended IDE Setup
+# Installation & Setup
+## Prerequisites
+Node.js 16+
+npm
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+## Quick Start
+1. Clone the repository
+git clone https://github.com/tolulope-i/hng-ticketflow-vue.git
+cd hng-ticketflow-vue
+2. Install dependencies
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+3. Start development server
 npm run dev
-```
 
-### Compile and Minify for Production
+## Authentication
+Pinia stores for reactive state
+Route guards for protected pages
+localStorage persistence
+Automatic session management
 
-```sh
-npm run build
-```
+## Test Credentials
+1. Account 1:
+Email: demo@ticketflow.com
+password: demo123
 
-### Lint with [ESLint](https://eslint.org/)
+3. Account 2:
+Email: tolu@gmail.com
+Password: tolu123
 
-```sh
-npm run lint
-```
+## Deployment
+Deployed on Vercel: https://hng-ticketflow-vue.vercel.app
