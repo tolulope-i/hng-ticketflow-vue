@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
   <footer class="footer" role="contentinfo">
@@ -14,16 +16,16 @@
         <div className="footer-section socials">
           <ul>
             <li>
-              <router-link to="https://www.facebook.com/marvelous.ilesanmi.9">Facebook</router-link>
+              <router-link to="https://www.facebook.com/marvelous.ilesanmi.9" target="_blank">Facebook</router-link>
             </li>
             <li>
-              <router-link to="https://x.com/dev__tolu?t=Y-q7l2pvY5032cfCsZp2mA&s=08">X</router-link>
+              <router-link to="https://x.com/dev__tolu?t=Y-q7l2pvY5032cfCsZp2mA&s=08" target="_blank">X</router-link>
             </li>
             <li>
-              <router-link to="https://www.linkedin.com/in/tolulope-ilesanmi?">LinkedIn</router-link>
+              <router-link to="https://www.linkedin.com/in/tolulope-ilesanmi?" target="_blank">LinkedIn</router-link>
             </li>
             <li>
-              <router-link to="https://www.instagram.com/tolu__nimi?igsh=MXN6M29yeXJhN3Z3Ng==">Instagram</router-link>
+              <router-link to="https://www.instagram.com/tolu__nimi?igsh=MXN6M29yeXJhN3Z3Ng==" target="_blank">Instagram</router-link>
             </li>
           </ul>
         </div>

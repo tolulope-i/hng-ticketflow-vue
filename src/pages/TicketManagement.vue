@@ -42,6 +42,12 @@ export default {
       if (!formData.title.trim()) {
         newErrors.title = 'Title is required'
       }
+      if (formData.title.length < 3) {
+        newErrors.title = 'Title must be at least 3 characters'
+      }
+      if (formData.description.length < 10) {
+        newErrors.description = 'Description must be at least 10 characters'
+      }
 
       if (!formData.status) {
         newErrors.status = 'Status is required'
