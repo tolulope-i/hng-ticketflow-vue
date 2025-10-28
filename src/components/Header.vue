@@ -49,8 +49,8 @@ export default {
           :aria-expanded="isMenuOpen"
           aria-label="Toggle navigation menu"
         >
-          <span v-if="isMenuOpen">&#10005; <!-- Close icon --></span>
-          <span v-else>&#9776; <!-- Hamburger icon --></span>
+          <span v-if="isMenuOpen">&#10005; </span>
+          <span v-else>&#9776; </span>
         </button>
 
         <ul :class="['nav-links', { active: isMenuOpen }]">

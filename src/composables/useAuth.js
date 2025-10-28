@@ -119,7 +119,7 @@ export function useAuth() {
     localStorage.removeItem('ticketapp_session')
   }
 
-  // Load user on initialization
+  // Loading user on initialization
   if (loading.value) {
     loadUser()
   }

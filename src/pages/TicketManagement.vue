@@ -80,7 +80,7 @@ export default {
       const updatedTickets = [...tickets.value]
 
       if (editingTicket.value) {
-        // Update existing ticket
+        // To Update existing ticket
         const index = updatedTickets.findIndex((t) => t.id === editingTicket.value.id)
         if (index !== -1) {
           updatedTickets[index] = {
@@ -91,7 +91,7 @@ export default {
         }
         addToast('Ticket updated successfully!', 'success')
       } else {
-        // Create new ticket
+        // To Create new ticket
         const newTicket = {
           id: Date.now(),
           ...formData,
