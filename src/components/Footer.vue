@@ -1,5 +1,18 @@
-<script setup>
+<script>
+import { Facebook } from 'lucide-vue-next';
+import { Twitter } from 'lucide-vue-next';
+import { Linkedin } from 'lucide-vue-next';
+import { Instagram } from 'lucide-vue-next';
 
+export default {
+  name: 'Footer',
+  components: {
+    Facebook,
+    Twitter,
+    Linkedin,
+    Instagram
+  },
+}
 </script>
 
 <template>
@@ -16,16 +29,25 @@
         <div className="footer-section socials">
           <ul>
             <li>
-              <router-link to="https://www.facebook.com/marvelous.ilesanmi.9" target="_blank">Facebook</router-link>
+              <router-link to="https://www.facebook.com/marvelous.ilesanmi.9" target="_blank">
+                <Facebook/>
+              </router-link>
             </li>
             <li>
-              <router-link to="https://x.com/dev__tolu?t=Y-q7l2pvY5032cfCsZp2mA&s=08" target="_blank">X</router-link>
+              <router-link to="https://x.com/dev__tolu?t=Y-q7l2pvY5032cfCsZp2mA&s=08" target="_blank">
+                <Twitter />
+              </router-link>
             </li>
             <li>
-              <router-link to="https://www.linkedin.com/in/tolulope-ilesanmi?" target="_blank">LinkedIn</router-link>
+              <router-link to="https://www.linkedin.com/in/tolulope-ilesanmi?" target="_blank">
+                  <Linkedin />
+
+              </router-link>
             </li>
             <li>
-              <router-link to="https://www.instagram.com/tolu__nimi?igsh=MXN6M29yeXJhN3Z3Ng==" target="_blank">Instagram</router-link>
+              <router-link to="https://www.instagram.com/tolu__nimi?igsh=MXN6M29yeXJhN3Z3Ng==" target="_blank">
+                <Instagram />
+              </router-link>
             </li>
           </ul>
         </div>

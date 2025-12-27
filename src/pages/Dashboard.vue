@@ -2,11 +2,19 @@
 import { ref, reactive, onMounted } from 'vue'
 import { useAuth } from '../composables/useAuth'
 import Header from '../components/Header.vue'
+import { CircleCheck } from 'lucide-vue-next'
+import { Clock } from 'lucide-vue-next'
+import { ChartNoAxesCombined } from 'lucide-vue-next'
+import { Zap } from 'lucide-vue-next'
 
 export default {
   name: 'Dashboard',
   components: {
     Header,
+    CircleCheck,
+    Clock,
+    ChartNoAxesCombined,
+    Zap,
   },
   setup() {
     const { user } = useAuth()
@@ -51,11 +59,17 @@ export default {
 
         <div class="stats-grid">
           <div class="stat-card card">
+            <div class="stat-icon" aria-hidden="true">
+              <CircleCheck />
+            </div>
             <div class="stat-number">{{ stats.total }}</div>
             <div class="stat-label">Total Tickets</div>
           </div>
 
           <div class="stat-card card">
+              <div class="stat-icon" aria-hidden="true">
+                <Clock />
+              </div>
             <div class="stat-number" style="color: var(--success-color)">
               {{ stats.open }}
             </div>
@@ -63,6 +77,9 @@ export default {
           </div>
 
           <div class="stat-card card">
+            <div class="stat-icon" aria-hidden="true">
+              <ChartNoAxesCombined />
+            </div>
             <div class="stat-number" style="color: var(--warning-color)">
               {{ stats.inProgress }}
             </div>
@@ -70,6 +87,9 @@ export default {
           </div>
 
           <div class="stat-card card">
+            <div class="stat-icon" aria-hidden="true">
+              <Zap />
+            </div>
             <div class="stat-number" style="color: var(--gray-500)">
               {{ stats.closed }}
             </div>
